@@ -1,0 +1,28 @@
+{% extends 'app/base.html' %}
+
+{% block title %}
+<title>Home page</title>
+{% endblock %}
+
+{% block body_block %}
+
+<div class='container'>
+    <div class='jumbotron'>
+        <h1>Details of School </h1>
+
+        <table border='1px'>
+            <tr>
+                <th>School name</th>
+                <th>School principal</th>
+                <th>School location</th>
+            </tr>
+            <tr>
+                <td>{{school.name}}</td>
+                <td>{{school.principal}}</td>
+                <td>{{school.location}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
