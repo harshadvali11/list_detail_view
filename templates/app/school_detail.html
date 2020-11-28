@@ -23,6 +23,8 @@
             </tr>
         </table>
     </div>
+    <a href="{% url 'update' pk=school.pk %}" class='btn btn-secondary'>Update</a>
+    <a href="{% url 'delete' pk=school.pk %}" class='btn btn-secondary'>Delete</a>
 </div>
 
 {% endblock %}
